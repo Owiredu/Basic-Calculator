@@ -205,11 +205,11 @@ class Ui_Form(object):
                 self.calc_line_edit.setText(ans)
                 self.display_history(raw_expr, ans)
             except:
-                self.calc_line_edit.setText('Error')
+                self.calc_line_edit.setText('Math Error')
         elif expr.strip() == '':
             pass
         else:
-            self.calc_line_edit.setText('Error')
+            self.calc_line_edit.setText('Syntax Error')
             
 
     def display_history(self, raw_expr, ans):
